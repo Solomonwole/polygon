@@ -70,248 +70,271 @@ function Technology() {
         </Box>
 
         {/* {value === 0 && ( */}
-          <Stack mt={10} mb={10} spacing={15}>
-            {/* First  */}
+        <Stack mt={10} mb={10} spacing={15}>
+          {/* First  */}
+          <Box
+            sx={{
+              width: "100%",
+              display: { sm: "flex" },
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
+          >
             <Box
+              width={{ sm: "50%" }}
+              height="100px"
               sx={{
-                width: "100%",
                 display: "flex",
-                justifyContent: "space-between",
+                justifyContent: "center",
                 alignItems: "center",
               }}
             >
-              <Box
-                width="50%"
-                height="100px"
-                sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
+              <img
+                src={WhiteBox}
+                alt=""
+                style={{
+                  width: "200px",
+                  height: "200px",
                 }}
-              >
-                <img
-                  src={WhiteBox}
-                  alt=""
-                  style={{
-                    width: "200px",
-                    height: "200px",
-                  }}
-                />
-              </Box>
-
-              <Box width="40%">
-                <Stack spacing={2}>
-                  <Stack direction="row" alignItems="end" spacing={1}>
-                    <Typography variant="h3" color="textPrimary.main">
-                      Polygon PoS
-                    </Typography>
-                    <Chip
-                      label="LIVE"
-                      variant="outlined"
-                      sx={{
-                        color: "#af89ee",
-                        border: "1px solid #af89ee",
-                      }}
-                    />
-                  </Stack>
-
-                  <Typography variant="body2" color="textSecondary.main">
-                    Support the most widely used Ethereum scaling ecosystem that
-                    offers EVM compatibility and an ultimate user experience
-                    with fast transactions at near-zero gas fees today.
-                  </Typography>
-
-                  <Stack direction="row" spacing={3}>
-                    <Button
-                      variant="contained"
-                      sx={{
-                        background:
-                          "linear-gradient(180deg, #8A46FF 0%, #6E38CC 100%)",
-                        borderRadius: "48px",
-                      }}
-                    >
-                      Open Docs <FiArrowUpRight />
-                    </Button>
-                    <Button
-                      variant="contained"
-                      sx={{
-                        background:
-                          "linear-gradient(180deg, #18161C 0%, #121014 100%)",
-                        borderRadius: "48px",
-                      }}
-                    >
-                      Learn More <FiArrowUpRight />
-                    </Button>
-                  </Stack>
-                </Stack>
-              </Box>
+              />
             </Box>
 
-            {/* Second  */}
+            <Box width={{ sm: "40%" }} mt={{ xs: 10, sm: 0 }}>
+              <Stack spacing={2}>
+                <Stack direction="row" alignItems="end" spacing={1}>
+                  <Typography variant="h3" color="textPrimary.main">
+                    Polygon PoS
+                  </Typography>
+                  <Chip
+                    label="LIVE"
+                    variant="outlined"
+                    sx={{
+                      color: "#af89ee",
+                      border: "1px solid #af89ee",
+                    }}
+                  />
+                </Stack>
+
+                <Typography variant="body2" color="textSecondary.main">
+                  Support the most widely used Ethereum scaling ecosystem that
+                  offers EVM compatibility and an ultimate user experience with
+                  fast transactions at near-zero gas fees today.
+                </Typography>
+
+                <Stack direction="row" spacing={3}>
+                  <Button
+                    variant="contained"
+                    sx={{
+                      background:
+                        "linear-gradient(180deg, #8A46FF 0%, #6E38CC 100%)",
+                      borderRadius: "48px",
+                    }}
+                  >
+                    Open Docs <FiArrowUpRight />
+                  </Button>
+                  <Button
+                    variant="contained"
+                    sx={{
+                      background:
+                        "linear-gradient(180deg, #18161C 0%, #121014 100%)",
+                      borderRadius: "48px",
+                    }}
+                  >
+                    Learn More <FiArrowUpRight />
+                  </Button>
+                </Stack>
+              </Stack>
+            </Box>
+          </Box>
+
+          {/* Second  */}
+
+          <Box
+            sx={{
+              width: "100%",
+              display: { sm: "flex" },
+              justifyContent: "space-between",
+              alignItems: "center",
+              flexDirection: "column-reverse",
+            }}
+          >
+            <Box
+              width={{ sm: "50%" }}
+              height="100px"
+              sx={{
+                display: { xs: "flex", sm: "none" },
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+              mb={10}
+            >
+              <img
+                src={WhiteBox2}
+                alt=""
+                style={{
+                  width: "200px",
+                  height: "200px",
+                }}
+              />
+            </Box>
 
             <Box
               sx={{
-                width: "100%",
                 display: "flex",
-                justifyContent: "space-between",
+                justifyContent: "center",
                 alignItems: "center",
               }}
+              
             >
-              <Box
+              <Stack
+                spacing={2}
                 sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
+                  width: { sm: "50%" },
                 }}
               >
-                <Stack
-                  spacing={2}
-                  sx={{
-                    width: "50%",
-                  }}
-                >
-                  <Stack direction="row" alignItems="end" spacing={1}>
-                    <Typography variant="h3" color="textPrimary.main">
-                      Polygon zkEVM
-                    </Typography>
-                    <Chip
-                      label="LIVE"
-                      variant="outlined"
-                      sx={{
-                        color: "#af89ee",
-                        border: "1px solid #af89ee",
-                      }}
-                    />
-                  </Stack>
-
-                  <Typography variant="body2" color="textSecondary.main">
-                    Unlock Ethereum scalability while maintaining security with
-                    the first ZK-rollup that offers EVM equivalence with fast
-                    transactions at near-zero gas cost today.
+                <Stack direction="row" alignItems="end" spacing={1}>
+                  <Typography variant="h3" color="textPrimary.main">
+                    Polygon zkEVM
                   </Typography>
-
-                  <Stack direction="row" spacing={3}>
-                    <Button
-                      variant="contained"
-                      sx={{
-                        background:
-                          "linear-gradient(180deg, #8A46FF 0%, #6E38CC 100%)",
-                        borderRadius: "48px",
-                      }}
-                    >
-                      Open Docs <FiArrowUpRight />
-                    </Button>
-                    <Button
-                      variant="contained"
-                      sx={{
-                        background:
-                          "linear-gradient(180deg, #18161C 0%, #121014 100%)",
-                        borderRadius: "48px",
-                      }}
-                    >
-                      Learn More <FiArrowUpRight />
-                    </Button>
-                  </Stack>
+                  <Chip
+                    label="LIVE"
+                    variant="outlined"
+                    sx={{
+                      color: "#af89ee",
+                      border: "1px solid #af89ee",
+                    }}
+                  />
                 </Stack>
-              </Box>
 
-              <Box
-                width="50%"
-                height="100px"
-                sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-              >
-                <img
-                  src={WhiteBox2}
-                  alt=""
-                  style={{
-                    width: "200px",
-                    height: "200px",
-                  }}
-                />
-              </Box>
+                <Typography variant="body2" color="textSecondary.main">
+                  Unlock Ethereum scalability while maintaining security with
+                  the first ZK-rollup that offers EVM equivalence with fast
+                  transactions at near-zero gas cost today.
+                </Typography>
+
+                <Stack direction="row" spacing={3}>
+                  <Button
+                    variant="contained"
+                    sx={{
+                      background:
+                        "linear-gradient(180deg, #8A46FF 0%, #6E38CC 100%)",
+                      borderRadius: "48px",
+                    }}
+                  >
+                    Open Docs <FiArrowUpRight />
+                  </Button>
+                  <Button
+                    variant="contained"
+                    sx={{
+                      background:
+                        "linear-gradient(180deg, #18161C 0%, #121014 100%)",
+                      borderRadius: "48px",
+                    }}
+                  >
+                    Learn More <FiArrowUpRight />
+                  </Button>
+                </Stack>
+              </Stack>
             </Box>
-
-            {/* Third  */}
 
             <Box
+              width={{ sm: "50%" }}
+              height="100px"
               sx={{
-                width: "100%",
+                display: { xs: "none", sm: "flex" },
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+              mt={10}
+            >
+              <img
+                src={WhiteBox2}
+                alt=""
+                style={{
+                  width: "200px",
+                  height: "200px",
+                }}
+              />
+            </Box>
+          </Box>
+
+          {/* Third  */}
+
+          <Box
+            sx={{
+              width: "100%",
+              display: { sm: "flex" },
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
+          >
+            <Box
+              width={{ sm: "50%" }}
+              height="100px"
+              sx={{
                 display: "flex",
-                justifyContent: "space-between",
+                justifyContent: "center",
                 alignItems: "center",
               }}
             >
-              <Box
-                width="50%"
-                height="100px"
-                sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
+              <img
+                src={WhiteBox}
+                alt=""
+                style={{
+                  width: "200px",
+                  height: "200px",
                 }}
-              >
-                <img
-                  src={WhiteBox}
-                  alt=""
-                  style={{
-                    width: "200px",
-                    height: "200px",
-                  }}
-                />
-              </Box>
-
-              <Box width="40%">
-                <Stack spacing={2}>
-                  <Stack direction="row" alignItems="end" spacing={1}>
-                    <Typography variant="h3" color="textPrimary.main">
-                      Polygon Miden
-                    </Typography>
-                    <Chip
-                      label="COMING SOON"
-                      variant="outlined"
-                      sx={{
-                        color: "#af89ee",
-                        border: "1px solid #af89ee",
-                      }}
-                    />
-                  </Stack>
-
-                  <Typography variant="body2" color="textSecondary.main">
-                    Build advanced dApps with client-side proving with the first
-                    decentralized rollup that leverages execution proofs of
-                    concurrent, local transactions.
-                  </Typography>
-
-                  <Stack direction="row" spacing={3}>
-                    <Button
-                      variant="contained"
-                      sx={{
-                        background:
-                          "linear-gradient(180deg, #8A46FF 0%, #6E38CC 100%)",
-                        borderRadius: "48px",
-                      }}
-                    >
-                      Open Docs <FiArrowUpRight />
-                    </Button>
-                    <Button
-                      variant="contained"
-                      sx={{
-                        background:
-                          "linear-gradient(180deg, #18161C 0%, #121014 100%)",
-                        borderRadius: "48px",
-                      }}
-                    >
-                      Learn More <FiArrowUpRight />
-                    </Button>
-                  </Stack>
-                </Stack>
-              </Box>
+              />
             </Box>
-          </Stack>
+
+            <Box width={{ sm: "40%" }} mt={{ xs: 10, sm: 0 }}>
+              <Stack spacing={2}>
+                <Stack direction="row" alignItems="end" spacing={1}>
+                  <Typography variant="h3" color="textPrimary.main">
+                    Polygon Miden
+                  </Typography>
+                  <Chip
+                    label="COMING SOON"
+                    variant="outlined"
+                    sx={{
+                      color: "#af89ee",
+                      border: "1px solid #af89ee",
+                    }}
+                  />
+                </Stack>
+
+                <Typography variant="body2" color="textSecondary.main">
+                  Build advanced dApps with client-side proving with the first
+                  decentralized rollup that leverages execution proofs of
+                  concurrent, local transactions.
+                </Typography>
+
+                <Stack direction="row" spacing={3}>
+                  <Button
+                    variant="contained"
+                    sx={{
+                      background:
+                        "linear-gradient(180deg, #8A46FF 0%, #6E38CC 100%)",
+                      borderRadius: "48px",
+                    }}
+                  >
+                    Open Docs <FiArrowUpRight />
+                  </Button>
+                  <Button
+                    variant="contained"
+                    sx={{
+                      background:
+                        "linear-gradient(180deg, #18161C 0%, #121014 100%)",
+                      borderRadius: "48px",
+                    }}
+                  >
+                    Learn More <FiArrowUpRight />
+                  </Button>
+                </Stack>
+              </Stack>
+            </Box>
+          </Box>
+        </Stack>
         {/* )} */}
 
         {/* {value === 1 && <Box></Box>} */}
