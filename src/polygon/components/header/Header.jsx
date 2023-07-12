@@ -5,9 +5,11 @@ import Logo from "../../../assets/logo.svg";
 import { BsDiscord, BsTwitter } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import PopModal from "../../../modal/PopModal";
 
 function Header() {
   const [menu, setMenu] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>
@@ -61,7 +63,11 @@ function Header() {
               <Stack direction="row" spacing={2} alignItems="center">
                 <BsTwitter fontSize="20px" cursor="pointer" />
                 <BsDiscord fontSize="20px" cursor="pointer" />
-                <Button variant="contained" color="primary">
+                <Button
+                  variant="contained"
+                  color="primary"
+                  onClick={() => setOpenModal(true)}
+                >
                   Build On Polygon
                 </Button>
               </Stack>
@@ -111,6 +117,8 @@ function Header() {
           </Box>
         )}
       </Box>
+
+      {openModal && <PopModal open={openModal} close={setOpenModal} />}
     </>
   );
 }
