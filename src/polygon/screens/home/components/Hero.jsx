@@ -7,7 +7,6 @@ import {
   Typography,
   IconButton,
   Button,
-  useMediaQuery,
   Card,
   CardActionArea,
   CardContent,
