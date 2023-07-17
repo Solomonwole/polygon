@@ -123,10 +123,12 @@ function Hero() {
           <BoxTemplate
             title="Stake"
             text="Participate in securing the network by delegating MATIC tokens"
+            link="https://staking.polygun.technology"
           />
           <BoxTemplate
             title="Use Polygon"
             text="Bridge, Swap and Manage your assets on Polygon"
+            link="https://wallet.polygun.technology/"
           />
         </Box>
 
